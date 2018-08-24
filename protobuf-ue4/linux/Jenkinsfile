@@ -51,7 +51,7 @@ pipeline {
                     if (ue4CleanBuild) {
                         buildEngine.ue4Checkout(ENGINE_LOCAL_DIR, ENGINE_SYS)
                         dir(ENGINE_LOCAL_DIR) {
-                            sh './ResumeGitDep.sh'                 
+                            buildEngine.ue4Setup(ENGINE_SYS, '')               
                         }
                     } 
                 }
