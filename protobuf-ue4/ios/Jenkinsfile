@@ -1,8 +1,6 @@
 #!/usr/bin/env groovy
 
-// def gitRepo = 'https://github.com/rog2/protobuf-ue4.git'
-
-def gitRepo = 'https://github.com/yanzhubiao/protobuf-ue4.git'
+def gitRepo = 'https://github.com/rog2/protobuf-ue4.git'
 
 pipeline {
     agent {
