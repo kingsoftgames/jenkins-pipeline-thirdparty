@@ -20,7 +20,7 @@ UE4_TOOL_CHAIN_LIST = [
 
 def getToolChain(UE4Version) {
     for (toolChain in UE4_TOOL_CHAIN_LIST) {
-        if (UE4Version.startsWith(toolChain.UE4_VERSION)) {
+        if (UE4Version.startsWith("${toolChain.UE4_VERSION}.")) {
             return toolChain
         }
     }
